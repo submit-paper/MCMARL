@@ -21,7 +21,7 @@ The requirements.txt file can be used to install the necessary packages into a v
 
 ## Training
 
-We provide variants of QMIX and VDN under our MCMARL framework, and we call them DQMIX and DVDN, respectively. The only difference between their training command is the "config" parameter so we take DQMIX as an example to show how to run our code. To train DQMIX on the stochastic matrix game:
+We provide variants of QMIX and VDN under our MCMARL framework, and we call them DQMIX and DVDN, respectively. The only difference between their training commands is the "config" parameter so we take DQMIX as an example to show how to run our code. To train DQMIX on the stochastic matrix game:
 
 ```shell
 python3 src/main.py --config=dqmix --env-config=matrix_game with t_max=2050000 epsilon_finish=1.0 obs_last_action=False v_min=-5 v_max=15
